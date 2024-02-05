@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Include Popper.js for Bootstrap's dropdown functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light d-none d-md-block">
+        <div class="container">
+            <!-- left side logo  -->
+            <a class="navbar-brand" href="#"><span
+                    class="text-success">ATG.</span><span>W</span><span>O</span><span>RLD</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Search bar -->
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <form class="form-inline my-2 my-md-0 mx-auto d-flex flex-row-reverse">
+                    <input class="form-control mr-sm-2 rounded-5 w-100 w-md-50" type="search"
+                        placeholder="Search for your favorite groups in ATG" aria-label="Search">
+                    <button class="btn my-2 my-sm-0" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <!-- right side icon  -->
+                <div class="navbar-nav d-flex flex-row row-gap-2 text-center text-md-center">
+                    <a class="nav-link">Create Account</a>
+                    <a class="nav-link dropdown-toggle text-primary" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false" data-bs-toggle="modal" data-bs-target="#loginSignupModal">
+                        It's free!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="bg-light d-block d-md-none">
+        <nav class="container navbar-dark d-flex justify-content-end fs-3 pt-2 pb-2 gap-3">
+            <i class="fa-solid fa-rectangle-xmark bg-dark-subtle" style="color: #868E96;"></i>
+            <i class="fa-solid fa-circle fa-flip-both" style="color: #868E96;"></i>
+            <i class="fa-solid fa-play fa-rotate-90" style="color: #868E96;"></i>
+        </nav>
+    </div>
+
+
+    <!-- model  -->
+    <div class="modal fade" id="loginSignupModal" tabindex="-1" aria-labelledby="loginSignupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success-subtle text-success position-relative">
+                    <button type="button" class="btn-close position-absolute end-0 bg-light rounded-circle"
+                        style="top: -30px;" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <small class="modal-title d-flex text-center" id="loginSignupModalLabel">Let's learn, share &
+                        inspire
+                        each other with our passion for computer engineering. Sign up now 🤘🏼</small>
+                </div>
+
+                <!-- model body -->
+                <div class="modal-body">
+                    <!-- Login Form -->
+                    <form id="loginForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="pb-3">Sign In</h3>
+                                <div class="d-flex row">
+                                    <div class="user-details">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="loginUsername"
+                                                placeholder="Enter username">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" class="form-control" id="loginPassword"
+                                                placeholder="Enter password">
+                                        </div>
+                                        <a href="/Siddharth_Goyal.html"
+                                            class="btn btn-primary w-100 mb-4 d-md-block d-none">Sign In</a>
+                                        <!-- sign in button for small device  -->
+                                        <div class="d-flex justify-content-between d-md-none d-block">
+                                            <a href="/Siddharth_Goyal.html" class="btn btn-primary w-50 mb-4">Sign
+                                                In</a>
+                                            <p class="">or <a class="switch-link switchSignUp" id="switchSignUp2">
+                                                    <span class="current-form">Create new for
+                                                        free!</span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-primary bg-transparent text-black mt-2 w-100" onclick="">
+                                            <i class="fab fa-facebook" style="color: #316FF6;"></i>
+                                            Sign In with
+                                            Facebook
+                                        </button>
+                                        <button type="button"
+                                            class="btn btn-primary bg-transparent text-black mt-2 w-100" onclick="">
+                                            Sign In with Google
+                                        </button>
+                                        <a class="d-flex justify-content-center mt-3" href="">Forgot
+                                            Password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login image col-6 d-none d-md-block">
+                                <p>Don't have an account yet? <a class="switch-link switchSignUp" id="switchSignUp1">
+                                        <span class="current-form">Create new for free!</span>
+                                    </a>
+                                </p>
+                                <img class="img-fluid" src="/illustration.jpg" alt="">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Login end-->
+
+                    <!-- Signup Form start -->
+                    <form id="signupForm" style="display: none;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="pb-3">Create Account</h3>
+                                <div class="mb-3">
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="First Name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" id="lastName"
+                                                placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <input type="email" class="form-control" id="signupEmail"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 input-group">
+                                        <input type="password" class="form-control" id="signupPassword"
+                                            placeholder="Password" aria-describedby="eyeToggle">
+                                        <button class="btn btn-outline-secondary" type="button" id="eyeToggle">
+                                            <i class="far fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" id="confirmPassword"
+                                            placeholder="Confirm Password">
+                                    </div>
+                                    <a href="/Siddharth_Goyal.html" type="submit"
+                                        class="btn btn-primary w-100 mb-4 d-md-block d-none">Sign
+                                        up
+                                    </a>
+                                    <div class="d-flex justify-content-between d-md-none d-block">
+                                        <a href="/Siddharth_Goyal.html" type="submit"
+                                            class="btn btn-primary w-50 mb-4">Create
+                                            Account
+                                        </a>
+                                        <p>or <a class="switch-link cursor-pointer" id="switchSignIn2">
+                                                <span class="current-form">Sign In</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary bg-transparent text-black mt-2 w-100"
+                                        onclick="">
+                                        <i class="fab fa-facebook" style="color: #316FF6;"></i>
+                                        Sign up with
+                                        Facebook
+                                    </button>
+                                    <button type="button" class="btn btn-primary bg-transparent text-black mt-2 w-100"
+                                        onclick="">
+                                        Sign up with Google
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="signup photo col-6 d-none d-md-block">
+                                <p>Already have an account? <a class="switch-link cursor-pointer " id="switchSignIn1">
+                                        <span class="current-form">Sign in</span>
+                                    </a>
+                                </p>
+                                <img class="img-fluid" src="/illustration.jpg" alt="">
+                                <small class="text-center" href="">By signing up, you agree
+                                    to our Terms & conditions, Privacy
+                                    policy</small>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- signup end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model end  -->
+
+    <!-- hero section  -->
+    <section class="hero-section">
+        <div class="content container">
+            <div class="top-left justify-content-between d-flex ">
+                <i class="fa-solid fa-arrow-right fa-rotate-180 fs-1 d-block d-md-none"></i>
+                <a href="" class="btn text-light border d-block d-md-none" role="button" aria-haspopup="true"
+                    aria-expanded="false" data-bs-toggle="modal" data-bs-target="#loginSignupModal">
+                    Join Group
+                </a>
+            </div>
+            <div class="left-bottom">
+                <h1 class="mb-3 text-light">Computer Engineering</h1>
+                <p class="lead text-white">142,765 Computer Engineers follow this</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 2nd nav bar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container pt-5">
+            <div class="navbar-nav nav-pills ">
+                <a class="nav-item nav-link border-bottom border-dark text-black rounded-0" aria-current="page"
+                    href="#">All
+                    Posts()</a>
+            </div>
+            <!-- Filter Button -->
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle d-block d-md-none " type="button"
+                    id="filterDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Filter: All
+                </button>
+                <div class="dropdown-menu" aria-labelledby="filterDropdown">
+                    <a class="dropdown-item" href="#">Articles</a>
+                    <a class="dropdown-item" href="#">Events</a>
+                    <a class="dropdown-item" href="#">Education</a>
+                    <a class="dropdown-item" href="#">Jobs</a>
+                </div>
+            </div>
+            <!-- nav items  -->
+            <div class="navbar-collapse border-bottom justify-content-between d-block d-md-none"
+                id="navbarSupportedContent">
+                <div class="d-none d-md-block">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Jobs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-md-block">
+                    <a href="#" class="btn bg-dark-subtle me-2 dropdown-toggle">Write Post</a>
+                    <a href="/Siddharth_Goyal.html" class="btn btn-primary join-group"><i
+                            class="fa-solid fa-user-group"></i> Join Group</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- card container  -->
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="cardContainer"></div>
+            </div>
+            <div class="col-1 d-none d-md-block"></div>
+            <div class="col-3 d-none d-md-block">
+                <div class="container d-flex border-bottom p-0 m-0">
+                    <p class="d-flex align-items-center">
+                        <i class="fa fa-location-dot fs-5"></i> Noida, India
+                    </p><i class="fa-regular fa-pen-to-square fs-5 d-inline-flex position-relative start-50"></i>
+                </div>
+                <p class="text-muted pt-5 opacity-50"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Your
+                    location will
+                    help us serve better and extend a personalised experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your custom script -->
+    <script src="/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.getElementById('loginForm');
+            const signupForm = document.getElementById('signupForm');
+            const switchSignIn = document.querySelectorAll('#switchSignIn1, #switchSignIn2');
+            const switchSignUp = document.querySelectorAll('#switchSignUp1, #switchSignUp2');
+            const currentFormText = document.querySelector('.current-form');
+
+            switchSignIn.forEach(element => {
+                element.addEventListener('click', function () {
+                    loginForm.style.display = 'block';
+                    signupForm.style.display = 'none';
+                    currentFormText.innerText = ' Create new for free!';
+                });
+            });
+
+            switchSignUp.forEach(element => {
+                element.addEventListener('click', function () {
+                    loginForm.style.display = 'none';
+                    signupForm.style.display = 'block';
+                    currentFormText.innerText = 'Sign In';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
