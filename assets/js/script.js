@@ -1,7 +1,7 @@
         // Your API response (in a real-world scenario, you would fetch this from a server)
         const apiData = [{
                 "id": 1,
-                "photo": "../img/01.jpg",
+                "photo": "https://github.com/Asibul07/responsive-blog-site/blob/main/assets/img/01.jpg",
                 "category": "✍️ Article",
                 "title": "What if famous brands had regular fonts? Meet RegulaBrands!",
                 "details": "I've worked in UX for the better part of a decade. From now on, I plan to rei…",
@@ -17,7 +17,7 @@
             },
             {
                 "id": 2,
-                "photo": "../img/02.jpg",
+                "photo": "https://github.com/Asibul07/responsive-blog-site/blob/main/assets/img/02.jpg",
                 "category": "🔬️ Education",
                 "title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
                 "details": "I've worked in UX for the better part of a decade. From now on, I plan to rei…",
@@ -35,7 +35,7 @@
             },
             {
                 "id": 3,
-                "photo": "../img/03.jpg",
+                "photo": "https://github.com/Asibul07/responsive-blog-site/blob/main/assets/img/03.jpg",
 
                 "category": "🗓️ Meetup",
                 "title": "Finance & Investment Elite Social Mixer @Lujiazui",
@@ -54,7 +54,7 @@
             },
             {
                 "id": 4,
-                "photo": "../img/04.jpg",
+                "photo": "https://github.com/Asibul07/responsive-blog-site/blob/main/assets/img/04.jpg",
                 "category": "💼️ Job",
                 "title": "Software Developer",
                 "date": "💻 Innovaccer Analytics Private Ltd.",
